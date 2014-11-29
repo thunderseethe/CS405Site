@@ -25,15 +25,15 @@
 
                                     </div>
                                     <div class="col-lg-6">
-                                        <p>Store: {{$bid->store->name}}</p>
-                                        <p>Status: <span class="status">{{$bid->status}}</span></p>
+                                        <p>Store: {{$bid->auction->store->name}}</p>
+                                        <p>Status: <span class="status">{{$bid->auction->status}}</span></p>
                                         <p>Bid Placed: {{date("Y-m-d", strtotime($bid->date))}}</p>
                                         <p>Bid amount: ${{money_format("%n", $bid->amount)}}</p>
                                     </div>
                                     <div class="col-lg-6">
-                                        <p>Name: {{ucwords($bid->item->name)}}</p>
-                                        <p>Description: {{$bid->item->description}}</p>
-                                        <p>Highest Bid: ${{money_format("%n", $bid->item->highest_bid())}}</p>
+                                        <p>Name: {{ucwords($bid->auction->item->name)}}</p>
+                                        <p>Description: {{$bid->auction->item->description}}</p>
+                                        <p>Highest Bid: ${{money_format("%n", $bid->auction->highest_bid())}}</p>
                                     </div>
                                 </div>
                             </div>

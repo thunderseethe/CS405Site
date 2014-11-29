@@ -40,7 +40,7 @@ class Users extends \BaseController {
     }
     
     public function bids(){
-        $bid = Bid::where('user_id', '=', Auth::user()->id)->with(array('store', 'item', 'user'))->get();
+        $bid = Bid::where('user_id', '=', Auth::user()->id)->with(array('auction', 'user'))->get();
         $data['bids'] = $bid;
         $data['active_bid'] = true;
         return View::make('users.bids')->with('data', $data);
