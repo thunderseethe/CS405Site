@@ -1,0 +1,67 @@
+body{
+    background-color:#f8f8f8;
+}
+.error{
+    border:1px solid red;
+    background:#FFC4C4;
+    text-align:center;
+    margin:5px 0;
+}
+hr{
+    margin: 10px 0;
+}
+.store_name{
+    color:#474a51;
+    text-shadow: 1px 1px 1px #ccc;
+}
+/* Widgets */
+.widget{
+    margin:0 auto;
+    width: 60%;
+    border:1px solid #999;
+    border-radius:10px;
+    background-color:white;
+}
+.widget .header{
+    background:linear-gradient(#fff, #f8f8f8);
+    padding:5px;
+    border-radius: 9px 9px 0px 0px;
+    border-bottom:1px solid #ccc;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+}
+.widget .header span{
+    color:#666;
+    font-size:16px;
+    margin-left:5px;
+}
+.widget .content{
+    padding:5px;   
+}
+
+/* Item Widgets */
+.item{
+    padding-bottom:5px;
+    margin-bottom:10px;
+}
+.item .widget{
+    border:1px solid #999;
+    width:70%;
+    margin:0 auto;
+    border-radius:4px;
+    background-color:white;
+}
+.item .widget .header{
+    background: #999;
+    background: linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+    box-shadow: 0px 1px 1px #efefef;
+    padding-left:3px;
+}
+.item .widget .header h4{
+    padding:5px 0 5px 5px;
+    text-transform: capitalize;
+    margin:0;
+    color:#666;
+}
+.item .widget .content{
+    padding:4px 3px 3px 5px;
+}
